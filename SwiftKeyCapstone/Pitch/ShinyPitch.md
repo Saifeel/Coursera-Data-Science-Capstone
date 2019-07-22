@@ -58,11 +58,13 @@ Additional Information and Documentation
 ========================================================
 
 - The instructions and guidelines for this project, along with additional information, can be found at: 
-    - [https://www.coursera.org/learn/data-science-project/home/welcome](https://www.coursera.org/learn/data-science-project/home/welcome)
+  - [https://www.coursera.org/learn/data-science-project/home/welcome](https://www.coursera.org/learn/data-science-project/home/welcome)
 
 - All data used for our predicition model came from the HC Corpus dataset. The dataset can be downloaded at:     
-    - [https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip](https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip)
+  - [https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip](https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip)
 
-- All the code, data, and resources used in creation of the app can be found at: [https://github.com/Saifeel/Coursera-Data-Science-Capstone](https://github.com/Saifeel/Coursera-Data-Science-Capstone)
+- All the code, data, and resources used in creation of the app can be found at: 
+  - [https://github.com/Saifeel/Coursera-Data-Science-Capstone](https://github.com/Saifeel/Coursera-Data-Science-Capstone)
 
-- The text prediction App is hosted at (ENTER RSHINY LINK FOR APP)
+- The text prediction shinyApp is hosted at:
+  - [https://saifeel.shinyapps.io/ShinyApp/](https://saifeel.shinyapps.io/ShinyApp/)
