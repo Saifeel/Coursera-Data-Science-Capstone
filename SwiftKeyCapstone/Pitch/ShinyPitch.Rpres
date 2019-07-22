@@ -63,6 +63,6 @@ Additional Information and Documentation
 - All data used for our predicition model came from the HC Corpus dataset. The dataset can be downloaded at:     
     - [https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip](https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip)
 
-- All the code, data, and resources used in creation of the app can be found at (ENTER GITHUB)
+- All the code, data, and resources used in creation of the app can be found at: [https://github.com/Saifeel/Coursera-Data-Science-Capstone](https://github.com/Saifeel/Coursera-Data-Science-Capstone)
 
 - The text prediction App is hosted at (ENTER RSHINY LINK FOR APP)
