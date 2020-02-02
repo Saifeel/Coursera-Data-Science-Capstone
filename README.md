@@ -4,7 +4,6 @@ title: "Capstone Report"
 author: Saifeel Momin 
 date: 7/20/19
 output:
-  autosize: true
   html_document:
     keep_md: true 
 ---
