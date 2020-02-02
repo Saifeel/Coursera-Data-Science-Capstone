@@ -7,7 +7,7 @@ output:
   html_document:
     keep_md: true 
 ---
-Coursera Data Science Capstone 
+# Coursera Data Science Capstone Report
 ========================================================
 # Exploratory Analysis and Model Building
 
@@ -15,7 +15,7 @@ Coursera Data Science Capstone
  
 Around the world, people are spending an increasing amount of time on their mobile devices for email, social networking, banking and a whole range of other activities. But typing on mobile devices can be a serious pain. SwiftKey, our corporate partner in this capstone, builds a smart keyboard that makes it easier for people to type on their mobile devices. One cornerstone of their smart keyboard is predictive text models. When someone types:
 
-I went to the
+'I went to the'
 
 the keyboard presents three options for what the next word might be. For example, the three words might be gym, store, restaurant. In this capstone you will work on understanding and building predictive text models like those used by SwiftKey.
 
@@ -353,8 +353,9 @@ multiplot(uniPlot, biPlot, triPlot, quadPlot, cols = 2)
 The cleaning and tokenizing process seems to have done an alright job at taking the raw texts and turning them into cleaner more organized text. However we could improve on our cleaning and tokenizing functions so that words are more correclty and accurately identifed. Trying a function on a corpus without removing stopwords and other characteristics might help better identify words and n-grams. Additionally, although reducing the sample size enables R to load and process the data a lot more efficiently, the smaller sample sizes may affect the accuracy of our models. 
 
 In the following steps we will build a series of prediction models and tune them to achieve the greatest level of accuracy. This model will then be used in our ShinyApp which will take in raw text input from the user and predict the next words. 
+========================================================
 
-# 2 ShinyApp Model Pitch 
+# ShinyApp Model Pitch 
 
 Now we will pitch the final product for the Coursera Data Science Specializtion capstone project. The main objective of this capstone was to use the provided HC Corpora dataset and develop an application that takes as input a phrase (multiple words) in a text box input and outputs a prediction of the next word. 
 
@@ -367,7 +368,7 @@ Presentation Overview:
 3) Show off the app and how it works 
 
 
-1. Explain how your model works 
+## 1. Explain how your model works 
 ========================================================
 
 Prior to creating a prediction model, the HC Corpora dataset was sampled and cleaned into a consistent format without punctuation, numbers, special characters, URLs, special characters, and capitalization. The cleaned sample was then processed and broken down by a n-gram tokenizer function from the RWeka package. For our model, n-grams of length 2,3, and 4 were identified and saved into individual dataframes. 
@@ -377,7 +378,7 @@ The prediction model that was developed takes in raw user input and converts it 
 If a match is not found in the quadgram dataframe, the prediction model moves to the trigram dataframe and uses the last two words of the input to filter matching rows and return suggestions. If no matches are found again, the model moves to the bigram dataframe and performs the same search but with only the last word from the input. If no suggestions are returned after the bigram dataframe, the model returns "No predictions based on input" and deactivates all the suggestion buttons. 
 
 
-2. Describe the model's predictive performance 
+## 2. Describe the model's predictive performance 
 ========================================================
 
 The predictive model is able to provide at least one accurate suggestion given most input. However, there are still numerous cases where the model fails to provide accurate or useful predictions.  For example, when the input includes a name, the model struggles to return a set of suggestions that are all grammatically accuarte or useful. Furthermore, as the app is hosted on a free shinyapp server we are unable to use larger n-gram dataframes based on larger samples of the HC Corpora data. A larger sample size would allow for greater predictive accuracy but could also reduce the efficiency of our model. 
@@ -387,26 +388,26 @@ To improve predictive accuracy, the model was updated to return the top three re
 Another feature that was added to the model to boost predictive accuracy is the ability for users to add their own suggestions. When the user inputs their own suggestion, it is automatically added to the main input and is also saved into a seperate dataframe consisting of added suggestions only. This new dataframe enables the model to provide suggestions that are personalized to the user. This helps overcome some of the model's difficulty in providing predictions when faced with special cases like names. 
 
 
-3. Show off the app and how it works
+## 3. Show off the app and how it works
 ========================================================
 right: 60%
 
 As a majority of SwiftKey product consumers are mobile users, simplicity and efficiency were two key  factors taken in consideration while developing the application. To start using the application, users must input a word or phrase into the first text input box **Box 1**. Once a valid phrase has been entered, the application will automatically search for suggestions. If there are any available suggestions, the buttons linked to **Box 2** will be activated and will display the top three (if available) suggestions. If the user wants to use one of the displayed suggestions, they simply click on the button and it will be added to the end of their input. As soon as the suggestion is added, the application will instantaneously search for news suggestions based on the updated input. The last button linked to **Box 3** will only be activated and display a suggestion when there is learned suggestion available. To add a learned suggestion, the user must input *one* word into the text input field at **Box 4** and then simply press the 'Add' button. This will add the new suggestion to the end of the current input and remember it for similar phrases in the future. **Box 6** displays the final output consisting of user input and selected suggestions.
 ***
-![App Demo!](./PresFigures/fig1.png)
+![App Demo!](SwiftKeyCaptsone/Pitch/PresFigures/fig1.png)
 
 
 
 
-Suggestion Learning Demo
+## Suggestion Learning Demo
 ========================================================
 
-![App Demo!](./PresFigures/fig2.png)
+![App Demo!](SwiftKeyCaptsone/Pitch/PresFigures/fig2.png)
 ***
-![App Demo!](./PresFigures/fig3.png)
+![App Demo!](SwiftKeyCaptsone/Pitch/PresFigures/fig3.png)
 ***
 
-Additional Information and Documentation 
+## Additional Information and Documentation 
 ========================================================
 
 - The instructions and guidelines for this project, along with additional information, can be found at: 
