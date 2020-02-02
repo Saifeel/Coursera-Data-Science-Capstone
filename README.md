@@ -403,9 +403,9 @@ As a majority of SwiftKey product consumers are mobile users, simplicity and eff
 ## Suggestion Learning Demo
 ========================================================
 
-![App Demo!](./SwiftKeyCaptsone/Pitch/PresFigures/fig2.png)
+![App Demo!](SwiftKeyCaptsone/Pitch/PresFigures/fig2.png)
 ***
-![App Demo!](./SwiftKeyCaptsone/Pitch/PresFigures/fig3.png)
+![App Demo!](SwiftKeyCaptsone/Pitch/PresFigures/fig3.png)
 ***
 
 ## Additional Information and Documentation 
