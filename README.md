@@ -1,5 +1,3 @@
-Coursera Data Science Capstone 
-========================================================
 ---
 title: "Capstone Report"
 author: Saifeel Momin 
@@ -9,6 +7,8 @@ output:
   html_document:
     keep_md: true 
 ---
+Coursera Data Science Capstone 
+========================================================
 # Exploratory Analysis and Model Building
 
 ## 1 - **Introduction**
