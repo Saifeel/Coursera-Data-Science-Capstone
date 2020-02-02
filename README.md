@@ -5,7 +5,8 @@ date: 7/20/19
 output:
   autosize: true 
   html_document:
-    keep_md: true 
+    keep_md: true
+    autosize: true 
 ---
 # Coursera Data Science Capstone Report
 ========================================================
