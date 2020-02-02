@@ -353,6 +353,7 @@ multiplot(uniPlot, biPlot, triPlot, quadPlot, cols = 2)
 The cleaning and tokenizing process seems to have done an alright job at taking the raw texts and turning them into cleaner more organized text. However we could improve on our cleaning and tokenizing functions so that words are more correclty and accurately identifed. Trying a function on a corpus without removing stopwords and other characteristics might help better identify words and n-grams. Additionally, although reducing the sample size enables R to load and process the data a lot more efficiently, the smaller sample sizes may affect the accuracy of our models. 
 
 In the following steps we will build a series of prediction models and tune them to achieve the greatest level of accuracy. This model will then be used in our ShinyApp which will take in raw text input from the user and predict the next words. 
+
 ========================================================
 
 # ShinyApp Model Pitch 
@@ -394,7 +395,7 @@ right: 60%
 
 As a majority of SwiftKey product consumers are mobile users, simplicity and efficiency were two key  factors taken in consideration while developing the application. To start using the application, users must input a word or phrase into the first text input box **Box 1**. Once a valid phrase has been entered, the application will automatically search for suggestions. If there are any available suggestions, the buttons linked to **Box 2** will be activated and will display the top three (if available) suggestions. If the user wants to use one of the displayed suggestions, they simply click on the button and it will be added to the end of their input. As soon as the suggestion is added, the application will instantaneously search for news suggestions based on the updated input. The last button linked to **Box 3** will only be activated and display a suggestion when there is learned suggestion available. To add a learned suggestion, the user must input *one* word into the text input field at **Box 4** and then simply press the 'Add' button. This will add the new suggestion to the end of the current input and remember it for similar phrases in the future. **Box 6** displays the final output consisting of user input and selected suggestions.
 ***
-![App Demo!](/SwiftKeyCaptsone/Pitch/PresFigures/fig1.png)
+![App Demo!](./SwiftKeyCaptsone/Pitch/PresFigures/fig1.png)
 
 
 
@@ -402,9 +403,9 @@ As a majority of SwiftKey product consumers are mobile users, simplicity and eff
 ## Suggestion Learning Demo
 ========================================================
 
-![App Demo!](/SwiftKeyCaptsone/Pitch/PresFigures/fig2.png)
+![App Demo!](./SwiftKeyCaptsone/Pitch/PresFigures/fig2.png)
 ***
-![App Demo!](/SwiftKeyCaptsone/Pitch/PresFigures/fig3.png)
+![App Demo!](./SwiftKeyCaptsone/Pitch/PresFigures/fig3.png)
 ***
 
 ## Additional Information and Documentation 
